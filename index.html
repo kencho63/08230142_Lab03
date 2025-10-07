@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">MyBlog</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="themeToggle">🌙 Dark Mode</button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2 id="welcomeText">Welcome to My Blog</h2>
+    <p>Sharing my journey, projects, and thoughts with the world.</p>
+    <button id="changeTextBtn">Click Me!</button>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="images/photo_6280639219814304893_y.jpg" alt="My Profile Picture" class="profile-pic">
+    <p>Hello! I'm Kencho, a passionate learner and aspiring web developer. 
+       This blog is where I share my experiences, skills, and projects.</p>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>Bachelor of ICT - Samtse College of Education (2025)</li>
+      <li>Tashidingkha HSS - High School Graduation</li>
+    </ul>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div><strong>Technical:</strong> HTML, CSS, JavaScript, Python</div>
+      <div><strong>Soft Skills:</strong> Communication, Leadership, Teamwork</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card" onmouseover="highlight(this)" onmouseout="removeHighlight(this)">
+        <h3>Personal Portfolio Website</h3>
+        <p>A responsive portfolio built with HTML and CSS.</p>
+      </div>
+      <div class="project-card" onmouseover="highlight(this)" onmouseout="removeHighlight(this)">
+        <h3>Arduino Smart Irrigation</h3>
+        <p>Used soil moisture sensor and relay module to automate irrigation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:kencho24@gmail.com">kencho24@gmail.com</a></p>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" id="name" required>
+      <input type="email" placeholder="Your Email" id="email" required>
+      <textarea placeholder="Your Message" id="message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="formResponse"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Kencho | My Personal Blog</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
